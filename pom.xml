@@ -20,7 +20,7 @@
 
   <groupId>com.redhat.rcm</groupId>
   <artifactId>redhat-releng-tools</artifactId>
-  <version>8-SNAPSHOT</version>
+  <version>20-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Red Hat RelEng Parent</name>
@@ -54,31 +54,30 @@
   </scm>
 
   <properties>
-    <javaVersion>1.8</javaVersion>
+    <javaVersion>11</javaVersion>
     <javaTestVersion>${javaVersion}</javaTestVersion>
     <projectOwner>Red Hat, Inc.</projectOwner>
     <projectEmail>jcasey@redhat.com</projectEmail>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-    <version.plugin.assembly>3.1.1</version.plugin.assembly>
+    <version.plugin.assembly>3.2.0</version.plugin.assembly>
     <version.plugin.clean>3.1.0</version.plugin.clean>
     <version.plugin.compiler>3.8.1</version.plugin.compiler>
-    <!-- MDEPLOY-244 -->
-    <version.plugin.deploy>2.8.2</version.plugin.deploy>
+    <version.plugin.deploy>3.0.0-M1</version.plugin.deploy>
     <!-- M2 causes issues with parent plugin verification -->
     <version.plugin.enforcer>3.0.0-M1</version.plugin.enforcer>
     <version.plugin.failsafe>3.0.0-M3</version.plugin.failsafe>
     <version.plugin.gpg>1.6</version.plugin.gpg>
     <version.plugin.install>3.0.0-M1</version.plugin.install>
-    <version.plugin.jar>3.1.2</version.plugin.jar>
+    <version.plugin.jar>3.2.0</version.plugin.jar>
     <version.plugin.javadoc>3.1.1</version.plugin.javadoc>
-    <version.plugin.plexus-component-metadata>1.7</version.plugin.plexus-component-metadata>
-    <version.plugin.sisu>0.3.3</version.plugin.sisu>
+    <version.plugin.plexus-component-metadata>2.1.0</version.plugin.plexus-component-metadata>
+    <version.plugin.sisu>0.3.4</version.plugin.sisu>
     <version.plugin.plugin>3.6.0</version.plugin.plugin>
-    <version.plugin.release>2.5.3</version.plugin.release>
+    <version.plugin.release>3.0.0-M1</version.plugin.release>
     <version.plugin.resources>3.1.0</version.plugin.resources>
     <version.plugin.site>3.8.2</version.plugin.site>
-    <version.plugin.source>3.1.0</version.plugin.source>
+    <version.plugin.source>3.2.0</version.plugin.source>
     <version.plugin.surefire>3.0.0-M3</version.plugin.surefire>
     <version.plugin.pmd>3.12.0</version.plugin.pmd>
 
@@ -447,7 +446,7 @@
         <plugin>
           <groupId>com.mycila</groupId>
           <artifactId>license-maven-plugin</artifactId>
-          <version>2.11</version>
+          <version>3.0</version>
           <configuration>
             <header>com/mycila/maven/plugin/license/templates/APACHE-2.txt</header>
             <properties>
